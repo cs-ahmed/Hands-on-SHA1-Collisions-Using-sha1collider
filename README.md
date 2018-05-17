@@ -175,7 +175,7 @@ Now, you will create your own distinct contracts using our template. Then, you w
 
 
 
-#### 2.4 Check the security of e-mailing PDF via Google e-mail}
+#### 2.4 Check the security of e-mailing PDF via Google e-mail
 
 Finally, check what happens when you try to send your newly generated PDFs via email to a friend or instructor. Document your findings, either by a screenshot or textual description. 
 
