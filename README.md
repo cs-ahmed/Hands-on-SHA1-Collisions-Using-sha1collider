@@ -1,12 +1,12 @@
 # Hands-on-SHA1-Collisions-Using-sha1collider
 
 
-Welcome to the SHA-1 collision creation exercise. In order to gain the most out of this exercise, you are expected to know what a cryptographic hash function is and have a basic understanding about what they are used for. An initial understanding of how SHA-1 works is preferred but not required (you can find an overview of both cryptographic hash functions and SHA-1 in the Introduction section).
+Welcome to the SHA-1 collision creation exercise. In order to gain the most out of this exercise, you are expected to know what cryptographic hash functions are and have a basic understanding about what they are used for. An initial understanding of how SHA-1 works is preferred but not required; you can find an overview of both cryptographic hash functions and SHA-1 in the ```Introduction``` section.
 
 Please setup the lab environment as directed in the ```Lab Setup Directions``` section.
-During the exercise, please follow instructions carefully and think about what they do.
+During the exercise, please follow instructions carefully and think about what each step accomplishes.
 Type the commands yourself- copy and paste will not work properly.
-If you run into trouble or have questions, let us know.
+If you run into trouble or have questions, let @aicsuva or @mmezher know.
 
 ---
 
@@ -25,7 +25,7 @@ Kali-Attacker.ova sha1 checksum: 2d0da6f07d289309b0ccc0ec6de4b2c9f620ea13
 
 ### 1. Introduction
 
-Cryptographic hash functions compress messages of arbitrary length into an output
+Cryptographic hash functions compress any message of arbitrary length into an output
 of short, fixed length. This output, referred to as its digest, is used to cross check
 the input data's identity by comparing it to a known digest for that data. If a hash
 function is secure and meets all requirements to be considered a cryptographic hash
@@ -33,18 +33,18 @@ function, its output should be unique for any given input. Moreover, small varia
 in the input should produce a distinguishable difference in its message digest.
 
 An important distinction to address is the difference between encryption algorithms and cryptographic hash functions.
-Encryption algorithms seek to hide messages from those the message was not directed towards, and requires no data to be lost during the alteration of the message.
-The message must be changed in such a way that the receiver can decrypt it and see its contents.
-Cryptographic hash functions, on the other hand, explicitly lose data during its process.
+Encryption algorithms seek to hide messages from those the messages were not directed towards, and requires no data to be lost during the alteration of the message.
+The messages must be changed in such a way that the receiver can decrypt them and see their contents.
+Cryptographic hash functions, on the other hand, explicitly lose data during the hashing process.
 This is done to facilitate a quicker speed at which the identity of data can be confirmed.
 Therefore, cryptographic hash functions are considered one-way functions;
-one is unable to decipher the contents of the hashed message from the output alone.
+one is unable to decipher the contents of hashed messages from the output alone.
 
 ##### The SHA-1 Hash Function
 
-The SHA-1 hash function is a member of the SHA family of hash functions and was create in 1995 as part of the U.S. Government's Capstone project. SHA-1 takes an arbitrary input and produces a 160-bit message digest, or hash. This hash can be used as the file's "fingerprint" for testing the authenticity of the data within. This hash function was found to be insecure in 2005, but has been used in recent years for certificate authentication and checksums of files.
+The SHA-1 hash function is a member of the SHA family of hash functions and was created in 1995 as part of the U.S. Government's Capstone project. SHA-1 takes an arbitrary input and produces a 160-bit message digest, or hash. This hash can be used as a file's "fingerprint" for testing the authenticity of the data within. This hash function was found to be insecure in 2005, but has been used in recent years for certificate authentication and checksums of files.
 
-In 2017, Stevens et al. crafted the first ever practical SHA-1 collision between two PDF files. The type of collision they created was a fixed prefix collision: A collision created by having identical starts of files, followed by distinct, slight differences in a small amount of the files, which is where the collision appears. After the collision is created, all that follows in both files (i.e. the suffixes of the files) must be identical.
+In 2017, Stevens et al. crafted the first ever practical SHA-1 collision between two PDF files. The type of collision they created was a fixed-prefix collision: A collision created by having identical starts of files, followed by distinct, slight differences in a small amount of the files, which is where the collision appears. After the collision is created, all that follows in both files (i.e. the suffixes of the files) must be identical.
 
 However, their collision was strategically placed to take advantage of a special property of the JPEG images in the PDFs: JPEG comments. JPEG comments are blocks of file data which are ignored by PDF viewers, as they are meant as metadata for the images rather than rendering information. Therefore, in the special blocks where their collision took place, they assigned different starting and end points of these comment fields for each file. This meant that while both files have the "data" for both PDFs embedded in their files, each renders a different image, depending on which image their JPEG comment length hides, as shown in Figure 1 below. 
 
