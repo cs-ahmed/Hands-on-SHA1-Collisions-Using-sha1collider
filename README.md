@@ -42,7 +42,7 @@ one is unable to decipher the contents of the hashed message from the output alo
 
 ##### The SHA-1 Hash Function
 
-The SHA-1 hash function is a member of the SHA family of hash functions and was create in 1995 as part of the U.S. Government's Capstone project. SHA-1 takes an arbitrary input and produces a 160-bit message digest, or hash. This hash can be used as the file's ``fingerprint" for testing the authenticity of the data within. This hash function was found to be insecure in 2005, but has been used in recent years for certificate authentication and checksums of files.
+The SHA-1 hash function is a member of the SHA family of hash functions and was create in 1995 as part of the U.S. Government's Capstone project. SHA-1 takes an arbitrary input and produces a 160-bit message digest, or hash. This hash can be used as the file's "fingerprint" for testing the authenticity of the data within. This hash function was found to be insecure in 2005, but has been used in recent years for certificate authentication and checksums of files.
 
 In 2017, Stevens et al. crafted the first ever practical SHA-1 collision between two PDF files. The type of collision they created was a fixed prefix collision: A collision created by having identical starts of files, followed by distinct, slight differences in a small amount of the files, which is where the collision appears. After the collision is created, all that follows in both files (i.e. the suffixes of the files) must be identical.
 
@@ -54,7 +54,7 @@ Notice that most PDFs have their important information about what it contains an
 Pointers to the end of the file are located throughout the PDF to grab information about its contents.
 Therefore, using the same identical prefixes and collision blocks as the researchers in 2017 did, we are able to generate our own colliding PDFs, as long as our own PDFs can fit into the JPEG comment lengths they originally created.
 
-Obviously, this attack only works for PDFs- their headers are locked in place, so operating systems will always recognize them as PDFs. You might be asking, ``Why can't we just craft our own collisions?", but while it is true that SHA-1 is broken and it is possible to create our own collisions, we do not have the resources to perform the attack from scratch in a reasonable amount of time. Their work costed ~\$100,000 to perform, along with taking the equivalent of 100 GPU years of work-- costs that, although feasible for corporations, governments and some hacking groups, would not be feasible for university students. Luckily, we can leverage the work already done to create countless PDF collisions!
+Obviously, this attack only works for PDFs- their headers are locked in place, so operating systems will always recognize them as PDFs. You might be asking, "Why can't we just craft our own collisions?", but while it is true that SHA-1 is broken and it is possible to create our own collisions, we do not have the resources to perform the attack from scratch in a reasonable amount of time. Their work costed ~\$100,000 to perform, along with taking the equivalent of 100 GPU years of work-- costs that, although feasible for corporations, governments and some hacking groups, would not be feasible for university students. Luckily, we can leverage the work already done to create countless PDF collisions!
 
 
 ### 2. SHA-1 Collision Creation
@@ -96,11 +96,13 @@ Perform the following actions:
 
 You will now use the ```collide.py``` script to generate TWO pdf files which correspond to ```realsyllabus.pdf``` and ```fakesyllabus.pdf``` but have the SAME sha1sum value. Before you proceed, feel free to inspect the ```collide.py``` script using your favorite editor.
 
-> Note: The explanation of the \texttt{collide.py} script is out of the scope of this document.<br><br>
+> Note: The explanation of the ```collide.py``` script is out of the scope of this document.
+<br><br>
 
 1. Start the collision generation for the ```realsyllabus.pdf``` and ```fakesyllabus.pdf``` in order to generate the two files called ```out-realsyllabus.pdf``` and ```out-fakesyllabus.pdf``` which have the same sha1sum value, by running:<br><br>
 	```python3 collide.py realsyllabus.pdf fakesyllabus.pdf --progressive```<br><br>
-Note: This process will keep running for some time. Don't interrupt the process until it finishes execution.<br><br>
+Note: This process will keep running for some time. Don't interrupt the process until it finishes execution.
+<br><br>
 ![Generating SHA-1 Collisions using collide.py](./images/04-run-collide-py.png)<br><br>
 
 2. View the content of the ```out-realsyllabus.pdf``` file by typing:<br><br>
@@ -121,6 +123,7 @@ Note: This process will keep running for some time. Don't interrupt the process 
 and<br><br>
 ```sha1sum out-fakesyllabus.pdf```<br><br>
 > <span style="color:red">Q4. Are the SHA1SUM values different?</span>
+
 <br><br>
 
 #### 2.3 Generate Your Own SHA-1 Collision
