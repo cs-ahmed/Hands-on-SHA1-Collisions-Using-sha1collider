@@ -193,12 +193,11 @@ https://goo.gl/forms/jZzRmft8X9kDbXsM2
 
 Monique Mezher<br>
 mmm5fd@virginia.edu<br>
-@mmezher
-
+GitHub: [@mmezher](https://github.com/mmezher)
 
 Ahmed Ibrahim<br>
 a.i@virginia.edu<br>
-@aicsuva
+GitHub: [@aicsuva](https://github.com/aicsuva)
 
 ---
 
