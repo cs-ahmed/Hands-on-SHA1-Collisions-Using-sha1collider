@@ -15,11 +15,13 @@ If you run into trouble or have questions, let us know.
 Download and install [VirtualBox](https://www.virtualbox.org/wiki/Downloads) (version 5.1.28, please!).
 
 
-Download the following [Kali-attacker VM](http://plato.cs.virginia.edu/ibrahim/vms/Kali-Attacker.ova) - size: 7.82GB - which we will refer to as the attacker machine.
+Download the following [Kali-attacker VM](http://www.cs.virginia.edu/ibrahim/vms/Kali-Attacker.ova) - size: 8.01GB - which we will refer to as the attacker machine.
 
-Kali-Attacker.ova md5 checksum: c86c5a68bfbb2b9002d3909710d46800
+Kali-Attacker.ova md5 checksum: b7f93f7872d4887288a78108dd02f9b8
 <br>
-Kali-Attacker.ova sha1 checksum: 2d0da6f07d289309b0ccc0ec6de4b2c9f620ea13
+Kali-Attacker.ova sha1 checksum: 42e16d7bce3f02ee395ac085185bbae8db55ed38
+<br>
+Kali-Attacker.ova sha256 checksum: 13aea4fa3ceb11397369a0dfdea106f9417ea289cacf14c89a1a67848de294f1
 
 ---
 
