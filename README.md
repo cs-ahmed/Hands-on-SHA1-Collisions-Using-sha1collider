@@ -145,7 +145,7 @@ Now, you will create your own distinct contracts using our template. Then, you w
 
 5. Export this modified version as ```<your computing id>-lease-2.pdf``` <br><br>
 
-6. Copy both PDF leases to the Kali VM.<br><br>
+6. Copy both PDF leases to the Kali VM. (Note: you may end up using https://justbeamit.com)<br><br>
 
 7. View the content of the ```<your computing id>-lease-1.pdf``` file by typing:<br><br>
 	```xdg-open <your computing id>-lease-1.pdf```<br><br>
