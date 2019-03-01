@@ -117,7 +117,7 @@ Note: This process will keep running for some time. Don't interrupt the process 
 4. Check the *size* of the output files, which should be named ```out-realsyllabus.pdf``` and ```out-fakesyllabus.pdf```, by typing:<br><br>
 	```ls -al```<br><br>
 
-5. Note the \textbf{size} of \texttt{out-realsyllabus.pdf} and \texttt{out-fakesyllabus.pdf} files on a sheet of paper. <br><br>
+5. Note the \textbf{size} of ```out-realsyllabus.pdf``` and ```out-fakesyllabus.pdf``` files on a sheet of paper. <br><br>
 > <span style="color:red">Q3. Are the size values different?</span>
 
 6. Check the SHA-1 hashes of the two new files by running the following commands:<br><br>
@@ -150,7 +150,7 @@ Now, you will create your own distinct contracts using our template. Then, you w
 7. View the content of the ```<your computing id>-lease-1.pdf``` file by typing:<br><br>
 	```xdg-open <your computing id>-lease-1.pdf```<br><br>
 
-8. View the content of the \texttt{<your computing id>-lease-2.pdf} file by typing:<br><br>
+8. View the content of the ```<your computing id>-lease-2.pdf``` file by typing:<br><br>
 	```xdg-open <your computing id>-lease-2.pdf```<br><br>
 
 9. Check the SHA-1 hashes of the two new files by running the following commands:<br><br>
