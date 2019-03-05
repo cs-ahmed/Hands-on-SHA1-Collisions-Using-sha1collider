@@ -163,7 +163,9 @@ Now, you will create your own distinct contracts using our template. Then, you w
 10. Start the collision generation for the ```<your computing id>-lease-1.pdf``` and ```<your computing id>-lease-2.pdf``` in order to generate the two files which have the same ```sha1sum``` value, by running:<br><br>
 	
 	```python3 collide.py <your computing id>-lease-1.pdf <your computing id>-lease-2.pdf --progressive```<br><br>
+		
 > Note: If the program rejects them for invalid file sizes, try a lower resolution PDF generator or reducing the amount of text added.
+
 <br><br>
 
 11. Check the SHA-1 hashes of the two new files, ```out-<your computing id>-lease-1.pdf``` and ```out-<your computing id>-lease-2.pdf``` by running:<br><br>
