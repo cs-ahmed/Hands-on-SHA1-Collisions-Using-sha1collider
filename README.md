@@ -94,7 +94,7 @@ Perform the following actions:
 
 > <span style="color:red">Q1. Are the SHA1SUM values different?</span>
 
-#### 2.2 Generate your SHA-1 Colliding PDFs}
+#### 2.2 Generate your SHA-1 Colliding PDFs
 
 You will now use the ```collide.py``` script to generate TWO pdf files which correspond to ```realsyllabus.pdf``` and ```fakesyllabus.pdf``` but have the SAME sha1sum value. Before you proceed, feel free to inspect the ```collide.py``` script using your favorite editor.
 
