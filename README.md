@@ -175,6 +175,7 @@ Now, you will create your own distinct contracts using our template. Then, you w
 ![Sha1sum example outputs post-collision](./images/sha1-out.JPG)<br><br>
    
 
+> <span style="color:red">Q5. Are the SHA1SUM values different?</span><br><br>
 > Oops!<br><br>
 
 
