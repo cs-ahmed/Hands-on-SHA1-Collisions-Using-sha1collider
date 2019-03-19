@@ -133,7 +133,7 @@ and<br><br>
 Now, you will create your own distinct contracts using our template. Then, you will run the collision generating program on them. 
 
 
-1. Download the contract template shown in the figure below, using this link:  http://plato.cs.virginia.edu/ibrahim/shared/compid-lease.docx <br><br>
+1. Download the contract template shown in the figure below, using this link:  http://www.cs.virginia.edu/ibrahim/shared/compid-lease.docx <br><br>
 ![Rental agreement template to download](./images/rental.png)<br><br>
 
 
