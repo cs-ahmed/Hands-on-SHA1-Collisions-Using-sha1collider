@@ -12,10 +12,10 @@ If you run into trouble or have questions, let @aicsuva or @mmezher know.
 
 ### 0. Lab Setup Directions
 
-Download and install [VirtualBox](https://www.virtualbox.org/wiki/Downloads) (version 5.1.28, please!).
+Download and install [VirtualBox](https://www.virtualbox.org/wiki/Downloads) (version 5.1.28, if possible!).
 
 
-Download the following [Kali-attacker VM](http://www.cs.virginia.edu/ibrahim/vms/Kali-Attacker.ova) - size: 8.01GB - which we will refer to as the attacker machine.
+Download the following [Kali-Attacker VM](http://www.cs.virginia.edu/ibrahim/vms/Kali-Attacker.ova) - size: 8.01GB - which we will refer to as the attacker machine.
 
 Kali-Attacker.ova md5 checksum: b7f93f7872d4887288a78108dd02f9b8
 <br>
