@@ -6,7 +6,7 @@ Welcome to the SHA-1 collision creation exercise. In order to gain the most out 
 Please setup the lab environment as directed in the ```Lab Setup Directions``` section.
 During the exercise, please follow instructions carefully and think about what each step accomplishes.
 Type the commands yourself- copy and paste will not work properly.
-If you run into trouble or have questions, let @aicsuva or @mmezher know.
+If you run into trouble or have questions, let [@cs-ahmed](https://github.com/cs-ahmed) or [@mmezher](https://github.com/mmezher) know.
 
 ---
 
@@ -202,7 +202,7 @@ GitHub: [@mmezher](https://github.com/mmezher)
 
 Ahmed Ibrahim<br>
 a.i@virginia.edu<br>
-GitHub: [@aicsuva](https://github.com/aicsuva)
+GitHub: [@cs-ahmed](https://github.com/cs-ahmed)
 
 ---
 
