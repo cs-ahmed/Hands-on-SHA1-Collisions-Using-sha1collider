@@ -12,16 +12,16 @@ If you run into trouble or have questions, let [@cs-ahmed](https://github.com/cs
 
 ### 0. Lab Setup Directions
 
-Download and install [VirtualBox](https://www.virtualbox.org/wiki/Downloads) (version 5.1.28, if possible!).
+Download and install [VirtualBox](https://www.virtualbox.org/wiki/Downloads).
 
 
-Download the following [Kali-Attacker VM](http://www.cs.virginia.edu/ibrahim/vms/Kali-Attacker.ova) - size: 8.01GB - which we will refer to as the attacker machine.
+Download the following [Kali-Attacker-2020 VM](https://ahmed.s3.us-east-2.amazonaws.com/VMs/Kali-Attacker-2020.ova) - size: 8.01GB - which we will refer to as the attacker machine.
 
-Kali-Attacker.ova md5 checksum: b7f93f7872d4887288a78108dd02f9b8
+Kali-Attacker.ova md5 checksum: 6cd418a67b5c31f46f8ba5a86a7e3603
 <br>
-Kali-Attacker.ova sha1 checksum: 42e16d7bce3f02ee395ac085185bbae8db55ed38
+Kali-Attacker.ova sha1 checksum: a9b9aab3700c7892b131938029a0203837be04e8
 <br>
-Kali-Attacker.ova sha256 checksum: 13aea4fa3ceb11397369a0dfdea106f9417ea289cacf14c89a1a67848de294f1
+Kali-Attacker.ova sha256 checksum: 5123c313efb2371ea69e4feb13c955c735167fe8c111e7c18f317ca8e298a895
 
 ---
 
@@ -201,7 +201,7 @@ mmm5fd@virginia.edu<br>
 GitHub: [@mmezher](https://github.com/mmezher)
 
 Ahmed Ibrahim<br>
-a.i@virginia.edu<br>
+aibrahim@pitt.edu<br>
 GitHub: [@cs-ahmed](https://github.com/cs-ahmed)
 
 ---
