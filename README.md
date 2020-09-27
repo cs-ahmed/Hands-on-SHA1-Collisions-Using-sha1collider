@@ -133,34 +133,34 @@ and<br><br>
 Now, you will create your own distinct contracts using our template. Then, you will run the collision generating program on them. 
 
 
-1. Download the contract template shown in the figure below, using this link:  http://www.cs.virginia.edu/ibrahim/shared/compid-lease.docx <br><br>
+1. Download the contract template shown in the figure below, using this link:  https://pitt-my.sharepoint.com/:w:/g/personal/aibrahim_pitt_edu/EYpZbBiFyP5IkFzI0GgrH1wBAFtF0UuQdmV0XytepTYDjQ?e=9bFD4b <br><br>
 ![Rental agreement template to download](./images/rental.png)<br><br>
 
 
 2. Open the template using your favorite .docx editor (or in Google Docs) and fill in the blank portions with your own terms. <br><br>
 
-3. Export this modified version as ```<your computing id>-lease-1.pdf``` <br><br>
+3. Export this modified version as ```<your_id>-lease-1.pdf``` <br><br>
 
 4. Open the template AGAIN using your favorite .docx editor (or in Google Docs) and EDIT the terms you entered in step 2.<br><br>
 
-5. Export this modified version as ```<your computing id>-lease-2.pdf``` <br><br>
+5. Export this modified version as ```<your_id>-lease-2.pdf``` <br><br>
 
 6. Copy both PDF leases to the Kali VM. (Note: you may end up using https://justbeamit.com)<br><br>
 
 7. View the content of the ```<your computing id>-lease-1.pdf``` file by typing:<br><br>
-	```xdg-open <your computing id>-lease-1.pdf```<br><br>
+	```xdg-open <your_id>-lease-1.pdf```<br><br>
 
 8. View the content of the ```<your computing id>-lease-2.pdf``` file by typing:<br><br>
-	```xdg-open <your computing id>-lease-2.pdf```<br><br>
+	```xdg-open <your_id>-lease-2.pdf```<br><br>
 
 9. Check the SHA-1 hashes of the two new files by running the following commands:<br><br>
-	```sha1sum <your computing id>-lease-1.pdf```<br><br>
+	```sha1sum <your_id>-lease-1.pdf```<br><br>
 	and<br><br>
-	```sha1sum <your computing id>-lease-2.pdf```<br><br>
+	```sha1sum <your_id>-lease-2.pdf```<br><br>
 		
 	![Sha1sum example outputs](images/sha1-own.JPG)<br><br>
 
-10. Start the collision generation for the ```<your computing id>-lease-1.pdf``` and ```<your computing id>-lease-2.pdf``` in order to generate the two files which have the same ```sha1sum``` value, by running:<br><br>
+10. Start the collision generation for the ```<your_id>-lease-1.pdf``` and ```<your_id>-lease-2.pdf``` in order to generate the two files which have the same ```sha1sum``` value, by running:<br><br>
 	
 	```python3 collide.py <your computing id>-lease-1.pdf <your computing id>-lease-2.pdf --progressive```<br><br>
 		
@@ -168,10 +168,10 @@ Now, you will create your own distinct contracts using our template. Then, you w
 
 <br><br>
 
-11. Check the SHA-1 hashes of the two new files, ```out-<your computing id>-lease-1.pdf``` and ```out-<your computing id>-lease-2.pdf``` by running:<br><br>
-	```sha1sum out-<your computing id>-lease-1.pdf```<br><br>
+11. Check the SHA-1 hashes of the two new files, ```out-<your_id>-lease-1.pdf``` and ```out-<your_id>-lease-2.pdf``` by running:<br><br>
+	```sha1sum out-<your_id>-lease-1.pdf```<br><br>
 	and<br><br>
-	```sha1sum out-<your computing id>-lease-2.pdf```<br><br>
+	```sha1sum out-<your_id>-lease-2.pdf```<br><br>
 ![Sha1sum example outputs post-collision](./images/sha1-out.JPG)<br><br>
    
 
